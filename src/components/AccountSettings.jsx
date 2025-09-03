@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 
 const AccountSettings = () => {
   const [formData, setFormData] = useState({
-    name: 'AP Logistics',
-    email: 'splogistics@gmail.com',
-    contact: '+91784638400',
-    street: 'R-567',
-    state: 'Delhi',
-    pincode: '118890',
-    country: 'India',
-    city: 'New Delhi'
+    name: '',
+    email: '',
+    contact: '',
+    street: '',
+    state: '',
+    pincode: '',
+    country: '',
+    city: ''
   });
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
